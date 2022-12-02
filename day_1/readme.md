@@ -1,6 +1,6 @@
 --- Day 1: Calorie Counting ---
 
---- Part 1 ---
+--- Part One ---
 
 Santa's reindeer typically eat regular reindeer food, but they need a lot of
 magical energy to deliver presents on Christmas. For that, their favorite snack
