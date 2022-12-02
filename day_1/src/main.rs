@@ -22,8 +22,15 @@ fn do_part_1(input: &str) -> i32 {
 }
 
 fn do_part_2(input: &str) -> i32 {
-    let (mut weights, _) = input.lines().fold((Vec::<i32>::new(), 0), |(vec, sum), line| {
-
-    });
-    weights.sort()
+    let (mut weights, _) =
+        input.lines()
+            .fold((Vec::<i32>::new(), 0), |(mut vec, sum), line| {
+                match line.parse::<i32>() {
+                    Ok(value) => (vec, sum + value),
+                    _ => { vec.push(sum); (vec, 0) }
+                }
+            });
+    weights.sort();
+    weights.reverse();
+    weights.iter().take(3).sum()
 }
