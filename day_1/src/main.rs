@@ -8,7 +8,7 @@ fn main() {
     println!("Part 2: {:?}", part_2);
 }
 
-// find the largest sum of consecutive numbers in the input.
+// find the largest sum of consecutive numbers in the input.txt.
 // There is one number per line and these runs are separated by a 
 // single blank line.
 fn do_part_1(input: &str) -> i32 {
